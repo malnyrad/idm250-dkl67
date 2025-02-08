@@ -1,0 +1,689 @@
+/*import fonts ================================================================*/
+@font-face {
+    font-family: 'areminiscentsmile';
+    src: url(../fonts/areminiscentsmile-regular.ttf) format(TrueType);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Office Times Round';
+    src: url('../fonts/officetimesround-regular.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Office Times Round Mono';
+    src: url('../fonts/officetimesround-roundmono.woff2') format('woff2');
+    font-style: normal;
+}
+
+
+/*define variables ============================================================*/
+html {
+    /*light mode ======================*/
+    --background-light: #F1F6EC;
+    --nutmeg:#7E493B;
+    --espresso-bar:#543628;
+    --blue-whale:#27394B;
+    --genie: #364065;
+
+    /*dark mode =======================*/
+    --background-dark:#0F1309;
+    --nutmeg-inv: #C48F81;
+    --espresso-bar-inv: #D7B9AB;
+    --blue-whale-inv: #B4C6D8;
+    --genie-inv: #A6AFD0;
+
+    /*fonts ===========================*/
+    --aremsmile: 'areminiscentsmile', Arial, sans-serif;
+    --ot-round: 'Office Times Round', Times, serif;
+    --ot-round-mono: 'Office Times Round Mono', Courier, monospace;
+
+    /*spacing =========================*/
+    --rhythm-1: 5vw;
+    --rhythm-2: 10vw;
+    --rhythm-3: 15vw;
+    --rhythm-4: 20vw;
+}
+
+
+/*color changes ===============================================================
+    - icon color filter: https://codepen.io/sosuke/pen/Pjoqqp*/
+/*light mode ==========================*/
+.nutmeg {
+    background-color: var(--nutmeg);
+    fill: var(--nutmeg);
+}
+
+.nutmeg-text {
+    color: var(--nutmeg);
+}
+
+.espresso-bar {
+    background-color: var(--espresso-bar);
+    fill: var(--espresso-bar);
+}
+
+.espresso-bar-text {
+    color: var(--espresso-bar);
+}
+
+.blue-whale {
+    background-color: var(--blue-whale);
+    fill: var(--blue-whale);
+}
+
+.blue-whale-text {
+    color: var(--blue-whale);
+}
+
+.genie {
+    background-color: var(--genie);
+    fill: var(--genie);
+}
+
+.genie-text {
+    color: var(--genie);
+}
+
+.dark-filter {
+    filter: invert(8%) sepia(3%) saturate(6170%) hue-rotate(43deg) brightness(78%) contrast(99%);
+}
+
+.light-text {
+    color: var(--background-light);
+}
+
+/*dark mode ===========================*/
+.nutmeg-inv {
+    background-color: var(--nutmeg-inv);
+    fill: var(--nutmeg-inv);
+}
+
+.nutmeg-inv-filter {
+    filter: invert(59%) sepia(20%) saturate(576%) hue-rotate(326deg) brightness(99%) contrast(93%);
+}
+
+.nutmeg-inv-text {
+    color: var(--nutmeg-inv);
+}
+
+.espresso-bar-inv {
+    background-color: var(--espresso-bar-inv);
+    fill: var(--espresso-bar-inv);
+}
+
+.espresso-bar-inv-filter {
+    filter: invert(75%) sepia(11%) saturate(512%) hue-rotate(334deg) brightness(100%) contrast(93%);
+}
+
+.espresso-bar-inv-text {
+    color: var(--espresso-bar-inv);
+}
+
+.blue-whale-inv {
+    background-color: var(--blue-whale-inv);
+    fill: var(--blue-whale-inv);
+}
+
+.blue-whale-inv-filter {
+    filter: invert(90%) sepia(3%) saturate(3272%) hue-rotate(181deg) brightness(92%) contrast(83%);
+}
+
+.blue-whale-inv-text {
+    color: var(--blue-whale-inv);
+}
+
+.genie-inv {
+    background-color: var(--genie-inv);
+    fill: var(--genie-inv);
+}
+
+.genie-inv-filter {
+    filter: invert(76%) sepia(20%) saturate(363%) hue-rotate(190deg) brightness(90%) contrast(87%);
+}
+
+.genie-inv-text {
+    color: var(--genie-inv);
+}
+
+.light-filter {
+    filter: invert(93%) sepia(2%) saturate(656%) hue-rotate(51deg) brightness(107%) contrast(93%);
+}
+
+.dark-text {
+    color: var(--background-dark);
+}
+
+/*general formatting ==========================================================*/
+/*elements ============================*/
+* {
+    box-sizing: border-box;
+    color: var(--background-light);
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--background-dark);
+    /*text-wrap: pretty;*/
+}
+
+main {
+    margin: 0 var(--rhythm-2);
+}
+
+a.text-link {
+    color: var(--genie-inv);
+    text-decoration: underline;
+}
+
+a:visited.text-link {
+    color: var(--nutmeg-inv);
+    text-decoration: underline;
+}
+
+footer {
+    height: var(--rhythm-2);
+}
+
+/*text ================================*/
+h1 {
+    font-family: var(--aremsmile);
+    font-size: 38vw; 
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .025rem;
+    line-height: 150%;
+}
+
+h2 {
+    font-family: var(--aremsmile);
+    font-size: 10vw; 
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .025rem;
+}
+
+h3 {
+    font-family: var(--ot-round-mono);
+    font-size: 8vw; 
+    font-style: normal;
+    font-weight: 700;
+    margin: var(--rhythm-4) 1vw var(--rhythm-1) 1vw;
+}
+
+h4 {
+    font-family: var(--aremsmile);
+    font-size: 7vw;
+    font-style: normal;
+    font-weight: 500;
+    margin: 3vw;
+}
+
+h5 {
+    font-family: var(--ot-round);
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h6 {
+    font-family: var(--aremsmile);
+    font-size: 16vw; 
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .025rem;
+    margin: 0;
+    padding-top: var(--rhythm-1);
+}
+
+p {
+    font-family: var(--ot-round);
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.logo {
+    font-family: var(--ot-round);
+    line-height: 80%;
+    text-decoration: none;
+    width: var(--rhythm-4);
+}
+
+.page-header {
+    font-size: 14vw;
+}
+
+.tag-line {
+    font-family: var(--ot-round-mono);
+    font-size: 4vw;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.05rem;
+    line-height: 120%;
+}
+
+.button-link {
+    color: var(--background-light);
+    font-family: var(--aremsmile);
+    font-size: 5vw;
+    text-decoration: none;
+}
+
+main > ul, main li {
+    font-family: var(--ot-round);
+    font-size: 3.5vw; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-right: 5vw;
+    margin-top: -0.5vw;
+}
+
+.lower-case {
+    text-transform: lowercase;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.break-wrap {
+    overflow-wrap: break-word;
+}
+
+/*alignments ==========================*/
+.center-align {
+    text-align: center;
+}
+
+.center-title {
+    margin: auto;
+    text-align: center;
+}
+
+/*spacing =============================*/
+.blank-space {
+    padding-top: var(--rhythm-4);
+}
+
+.half-space {
+    padding-top: var(--rhythm-2);
+}
+
+.quarter-space {
+    padding-top: var(--rhythm-1);
+}
+
+.anti-space {
+    margin-top: -2.5vw;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+/*images ==============================*/
+img {
+    width: 100%;
+}
+
+.vertical-photoset {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vertical-photoset img {
+    width: 43vw;
+}
+
+.bg-deco {
+    background-attachment: fixed;
+    background-image: url("../images/bg_sphere2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-deco-2 {
+    background-attachment: fixed;
+    background-image: url("../images/bg_sphere.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*buttons =============================*/
+.see-more-button img {
+    left: 21.75vw;
+    position: relative;
+    width: var(--rhythm-3);
+}
+
+.see-more-button a.button-link {
+    left: -7vw;
+    position: relative;
+    top: -6vw;
+}
+
+.prev-button {
+    margin-left: var(--rhythm-3);
+}
+
+.prev-button img {
+    position: relative;
+    width: var(--rhythm-3);
+}
+
+.prev-button a.button-link {
+    left: -11.25vw;
+    position: relative;
+    top: -6vw;
+}
+
+.next-button {
+    margin-left: -15vw;
+}
+
+.next-button img {
+    left: 64.5vw;
+    position: relative;
+    width: var(--rhythm-3);
+}
+
+.next-button a.button-link {
+    left: 43.5vw;
+    position: relative;
+    top: -6vw;
+}
+
+.back-button img, .back-to-top img {
+    left: 32vw;
+    position: relative;
+    width: var(--rhythm-4);
+}
+
+.back-button a.button-link {
+    color: var(--background-dark);
+    font-size: 4.5vw;
+    left: 13.5vw;
+    position: relative;
+    top: -8.5vw;
+}
+
+.back-to-top a.button-link {
+    color: var(--background-dark);
+    font-size: 4.5vw;
+    left: 15.5vw;
+    position: relative;
+    top: -8.5vw;
+}
+
+
+/*navigation ==================================================================
+    - sliding hamburger menu: https://codepen.io/alvarotrigo/pen/yLzaPVJ*/
+.header-bar {
+    align-items: center;
+    background-color: #151710;
+    box-shadow: -0.5vw 0 1.5vw rgba(0, 0, 0, .25);
+    display: flex;
+    flex-direction: column;
+    height: var(--rhythm-4);
+    justify-content: center;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#toggle {
+    opacity: 0;
+}
+
+#toggle:checked ~ .menu-overlay {
+    right: 0 !important;
+}
+
+.menu-button {
+    cursor: pointer;
+    position: fixed;
+    right: var(--rhythm-1);
+    top: var(--rhythm-1);
+    width: var(--rhythm-2);
+    z-index: 3;
+}
+
+.menu-overlay {
+    background-color: var(--background-dark);
+    box-shadow: -0.5vw 0 1.5vw rgba(0, 0, 0, .5);
+    display: block;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: var(--rhythm-4) 0;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    transition-duration: .25s;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu-item {
+    color: var(--background-light);
+    display: block;
+    font-family: var(--ot-round-mono);
+    font-size: 8vw;
+    font-style: italic;
+    font-weight: 700;
+    padding: 3.5vw var(--rhythm-2);
+    text-align: right;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.selected-menu-item {
+    display: block;
+    font-family: var(--ot-round-mono);
+    font-size: 8vw;
+    font-style: italic;
+    font-weight: 700;
+    padding: 3.5vw var(--rhythm-2);
+    text-align: right;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.menu-item:hover, .selected-menu-item:hover {
+    background-color: rgba(9, 13, 3, .75);
+}
+
+
+/*home page ===================================================================
+    - overlapping reference: https://jsfiddle.net/25UTA/1/*/
+.title-top {
+    letter-spacing: 0.3rem;
+    position: absolute;
+    right: var(--rhythm-3);
+    top: 58vw;
+}
+
+article {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -20vw;
+}
+
+article > img {
+    border-radius: 0.5vw;
+    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+    position: relative;
+    top: var(--rhythm-4);
+    width: 30vw;
+    z-index: 1;
+}
+
+article > img.horizontal-image {
+    border-radius: 0.5vw;
+    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+    position: relative;
+    top: var(--rhythm-4);
+    width: 50vw;
+    z-index: 1;
+}
+
+.project-box {
+    align-items: center;
+    background-color: #151710;
+    border-radius: 1vw;
+    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--rhythm-1);
+    padding-right: var(--rhythm-1);
+    padding-top: var(--rhythm-4);
+}
+
+.project-box h2 {
+    margin-bottom: 1.5vw;
+    margin-top: var(--rhythm-1);
+}
+
+.project-box p {
+    margin-bottom: 4.5vw;
+    margin-top: 0;
+}
+
+.project-blurb {
+    font-size: 3.5vw;
+}
+
+
+/*projects pages ==============================================================*/
+.project-header {
+    font-size: 12vw;
+    margin-bottom: 0;
+}
+
+main > img {
+    border-radius: 0.5vw;
+    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--rhythm-1);
+    width: 40vw;
+}
+
+main > img.project-vertical {
+    border-radius: 0.5vw;
+    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--rhythm-1);
+    width: 50vw;
+}
+
+main > img.project-horizontal {
+    border-radius: 0.5vw;
+    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--rhythm-1);
+    width: 80vw;
+}
+
+.vertical-photoset > .triple-column {
+    border-radius: 0.5vw;
+    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+    width: 25.5vw;
+}
+
+
+/*personal page ===============================================================*/
+.scrollable {
+    border-radius: 0.5vw;
+    max-width: 80vw;
+    overflow-x: clip;
+    overflow-y: auto;
+    position: relative;
+}
+
+.photo-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.photo-section img {
+    border-radius: 0.5vw;
+    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .5);
+    margin: 1.5vw;
+    width: 80vw;
+}
+
+.scrollable > .vertical-photoset img {
+    width: 38.5vw;
+}
+
+
+/*about me page ===============================================================*/
+.about-me img {
+    border-radius: 0.5vw;
+    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+    position: relative;
+    top: var(--rhythm-4);
+    width: 60vw;
+}
+
+.about-me img.horizontal-image {
+    border-radius: 0.5vw;
+    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+    position: relative;
+    top: var(--rhythm-1);
+    width: 80vw;
+}
+
+.about-icons {
+    align-items: center;
+    background-color: #151710;
+    border-radius: 1vw;
+    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    margin-top: -15vw;
+}
+
+.about-icons img {
+    margin: 6vw;
+    width: 15vw;
+}
+
+
+/*resume page =================================================================*/
+
+.resume-icon {
+    left: 37vw;
+    position: relative;
+    top: 6.5vw;
+    width: 8vw;
+}
+
+.resume-circle {
+    left: 43.5vw;
+    position: absolute;
+    top: 55vw;
+    width: 15vw;
+    z-index: -1;
+}
