@@ -1,0 +1,1 @@
+This is the <strong>page.php</strong> page.

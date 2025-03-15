@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <main class="post-container">
+    This is the <strong>single.php</strong> page.
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <article class="post">
             <h1 class="post-title"><?php the_title(); ?></h1>
