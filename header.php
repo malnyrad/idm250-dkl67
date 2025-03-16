@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         <?php
-            wp_title('|', true, 'right'); // About
-            bloginfo('name'); // IDM250
+            wp_title('|', true, 'right'); //page name
+            bloginfo('name'); //site title
         ?>
     </title>
-    <!--<link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">-->
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
