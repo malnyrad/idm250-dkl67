@@ -7,11 +7,6 @@
         );
 
         wp_enqueue_style(
-            'bootstrap-css',
-            'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
-        );
-
-        wp_enqueue_style(
             'idm-variables',
             get_template_directory_uri() . '/dist/css/variables.css',
             [],

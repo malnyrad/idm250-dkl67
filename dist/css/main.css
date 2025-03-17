@@ -89,6 +89,7 @@ p {
 }
 
 .logo {
+    color: var(--background-light);
     font-family: var(--ot-round);
     line-height: 80%;
     text-decoration: none;
@@ -188,14 +189,14 @@ img {
 
 .bg-deco {
     background-attachment: fixed;
-    background-image: url("../dist/images/bg_sphere_1.png");
+    background-image: url("../images/bg_sphere_1.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .bg-deco-2 {
     background-attachment: fixed;
-    background-image: url("/dist/images/bg_sphere_2.png");
+    background-image: url("../images/bg_sphere_2.png");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -449,4 +450,541 @@ main > img.project-horizontal {
     top: 55vw;
     width: 15vw;
     z-index: -1;
+}
+
+/*=================================================================================================*/
+/*=================================================================================================*/
+
+@media (min-width: 744px) {
+    /*general formatting ==========================================================*/
+    
+    main {
+        margin: 0 var(--rhythm-3);
+    }
+
+    /*text ================================*/
+    h1 {
+        font-size: 32vw; 
+    }
+
+    h2 {
+        font-size: 8vw; 
+    }
+
+    h3 {
+        font-size: 9vw; 
+    }
+
+    h5 {
+        font-size: 4.75vw;
+    }
+
+    h6 {
+        font-size: 12vw; 
+    }
+
+    p {
+        font-size: 2.5vw;
+    }
+
+    .logo {
+        position: relative;
+        top: -1vw;
+    }
+
+    .page-header {
+        font-size: 12vw;
+    }
+
+    .tag-line {
+        font-size: 3.5vw;
+    }
+
+    main > ul, main li {
+        font-size: 2.5vw;
+    }
+
+    /*spacing =============================*/
+    .blank-space {
+        padding-top: var(--rhythm-3);
+    }
+
+    /*images ==============================*/
+    .bg-deco-2 {
+        background-attachment: fixed;
+        background-image: linear-gradient(to right, rgba(15, 19, 9, 0), rgba(15, 19, 9, .8));
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+ 
+    /*buttons =============================*/
+    .prev-button a.button-subheader {
+        left: 5vw;
+    }
+    
+    .next-button a.button-subheader {
+        left: 39.5vw;
+    }
+    
+    .back-button img, .back-to-top img {
+        left: 30vw;
+        width: var(--rhythm-3);
+    }
+    
+    .back-button a.button-link {
+        font-size: 3.5vw;
+        left: 16vw;
+        top: -6.5vw;
+    }
+    
+    .back-to-top a.button-link {
+        font-size: 4vw;
+        left: 16.5vw;
+        top: -6.5vw;
+    }
+
+    /*home page ===================================================================*/
+
+    .title-top {
+        top: 50vw;
+    }
+
+    article {
+        top: -15vw;
+    }
+
+    article > img {
+        top: var(--rhythm-3);
+        width: 27.5vw;
+    }
+
+    article > img.horizontal-image {
+        top: var(--rhythm-3);
+        width: 45vw;
+    }
+
+    .project-box h2 {
+        margin-top: 0;
+    }
+
+    .project-box p {
+        margin-bottom: 3vw;
+    }
+
+    .project-blurb {
+        font-size: 3vw;
+    }
+
+    /*projects pages ==============================================================*/
+
+    .project-header {
+        font-size: 10.5vw;
+    }
+
+    main > img {
+        width: 30vw;
+    }
+
+    main > img.project-vertical {
+        width: 40vw;
+    }
+
+    main > img.project-horizontal {
+        width: 60vw;
+    }
+
+    .vertical-photoset > .triple-column {
+        width: 22.5vw;
+    }
+
+    /*personal page ===============================================================*/
+
+    .personal-subheader {
+        font-size: 4.5vw;
+    }
+    
+    .personal-subheader-r {
+        font-size: 4.5vw;
+        left: 57.5vw;
+    }
+
+    .scrollable {
+        max-width: 75vw;
+    }
+
+    .photo-section img {
+        width: 75vw;
+    }
+
+    .scrollable > .vertical-photoset img {
+        width: 33.5vw;
+    }
+
+    /*about me page ===============================================================*/
+
+    .about-me img {
+        top: var(--rhythm-3);
+        width: 40vw;
+    }
+
+    .about-me img.horizontal-image {
+        width: 60vw;
+    }
+
+    .about-icons {
+        margin-top: -10vw;
+        max-width: 80vw;
+    }
+
+    .about-icons img {
+        margin: 4vw;
+        width: 10vw;
+    }
+
+    /*resume page =================================================================*/
+
+    .resume-icon {
+        left: 33.8vw;
+        top: 7vw;
+        width: 6vw;
+    }
+
+    .resume-circle {
+        left: 45.5vw;
+        top: 47.5vw;
+        width: 12.5vw;
+    }
+
+    .resume-dates {
+        font-size: 3.25vw;
+    }
+}
+
+/*=================================================================================================*/
+/*=================================================================================================*/
+
+@media (min-width: 1280px) {
+    /*general formatting ==========================================================*/
+    
+    main {
+        margin: 0 10vw 0 27.5vw;
+    }
+
+    footer {
+        height: var(--rhythm-1);
+    }
+
+    /*text ================================*/
+    h1 {
+        font-size: 22.5vw; 
+        line-height: 75%;
+        padding-bottom: 12vw;
+    }
+
+    h2 {
+        font-size: 7vw; 
+    }
+
+    h3 {
+        font-size: 6vw; 
+    }
+
+    h5 {
+        font-size: 2.3vw;
+    }
+
+    h6 {
+        font-size: 12vw; 
+    }
+
+    p {
+        font-size: 1.25vw;
+    }
+
+    .logo {
+        z-index: 2;
+    }
+
+    .page-header {
+        font-size: 9vw;
+    }
+
+    .tag-line {
+        font-size: 2vw;
+    }
+
+    .button-link {
+        z-index: 2;
+    }
+
+    main > ul, main li {
+        font-size: 1.25vw; 
+    }
+
+    /*spacing =============================*/
+    .blank-space {
+        padding-top: 2vw;
+    }
+
+    .quarter-space {
+        padding-top: 2vw;
+    }
+
+    /*images ==============================*/
+    .bg-deco-2 {
+        background-attachment: fixed;
+        background-image: none;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    /*buttons =============================*/
+    .see-more-button img {
+        left: 11.75vw;
+        top: 1vw;
+        width: 7.5vw;
+        z-index: 2;
+    }
+
+    .see-more-button a.button-link {
+        font-size: 2.75vw;
+        left: -3vw;
+        top: -2vw;
+        z-index: 2;
+    }
+
+    .prev-button a.button-link {
+        font-size: 2.5vw;
+        left: 27.5vw;
+        z-index: 2;
+    }
+
+    .prev-button a.button-subheader {
+        font-size: 2vw;
+        left: 2.5vw;
+        top: 2.5vw;
+        width: 25vw;
+        z-index: 2;
+    }
+
+    .next-button a.button-link {
+        font-size: 2.5vw;
+        left: 65vw;
+        z-index: 2;
+    }
+
+    .next-button a.button-subheader {
+        font-size: 2vw;
+        left: 34.5vw;
+        top: 2.5vw;
+        z-index: 2;
+    }
+
+    .back-button img, .back-to-top img {
+        left: 26.5vw;
+        top: -5vw;
+        width: var(--rhythm-2);
+        z-index: 2;
+    }
+
+    .back-button a.button-link {
+        font-size: 2.5vw;
+        left: 17vw;
+        top: -9.25vw;
+        z-index: 2;
+    }
+
+    .back-to-top a.button-link {
+        font-size: 2.5vw;
+        left: 18vw;
+        top: -9.25vw;
+        z-index: 2;
+    }
+
+    /*home page ===================================================================*/
+
+    .title-top {
+        right: 18vw;
+        top: 25vw;
+    }
+
+    article {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 7.5vw;
+        top: -1.5vw;
+    }
+
+    article > img {
+        margin-right: 2vw;
+        top: -1.5vw;
+        width: 15vw;
+        z-index: 0;
+    }
+
+    article > img.horizontal-image {
+        margin-right: 2vw;
+        top: -1.5vw;
+        width: 25vw;
+        z-index: 0;
+    }
+
+    .project-box {
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+        padding-top: var(--rhythm-1);
+    }
+
+    .project-box h2 {
+        font-size: 5.5vw;
+    }
+
+    .project-box p {
+        margin-bottom: 2vw;
+    }
+
+    .project-blurb {
+        font-size: 1.5vw;
+    }
+
+    /*projects pages ==============================================================*/
+
+    .project-header {
+        font-size: 6vw;
+    }
+
+    main > p {
+        position: relative;
+        z-index: 5;
+    }
+
+    main > img {
+        width: 20vw;
+    }
+
+    main > img.project-vertical {
+        margin-top: 2vw;
+        width: 20vw;
+    }
+
+    main > img.project-horizontal {
+        width: 40vw;
+    }
+
+    .vertical-photoset > .triple-column {
+        padding-top: 1.5vw;
+        width: 17.5vw;
+    }
+
+    /*personal page ===============================================================*/
+
+    .personal-page-header {
+        font-size: 6vw;
+        margin-top: -3.5vw;
+    }
+
+    .personal-page-subheader {
+        font-size: 4.5vw;
+    }
+
+    .personal-nav {
+        margin-bottom: -1.5vw;
+        padding-top: 0.5vw;
+        position: relative;
+        z-index: 2;
+    }
+
+    .personal-subheader {
+        font-size: 3vw;
+    }
+
+    .personal-subheader-r {
+        font-size: 3vw;
+        left: 54vw;
+    }
+
+    .scrollable {
+        margin-bottom: 2vw;
+        margin-left: 11vw;
+        max-width: 40vw;
+    }
+
+    .photo-section img {
+        margin: 0.5vw;
+        width: 40vw;
+    }
+
+    .scrollable > .vertical-photoset img {
+        width: 19.5vw;
+    }
+
+    /*about me page ===============================================================*/
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    article.about-me {
+        margin: -5vw 5vw;
+    }
+
+    .about-me img {
+        top: 2vw;
+        width: 20vw;
+    }
+
+    .about-me img.horizontal-image {
+        top: 2.5vw;
+        width: 25vw;
+    }
+
+    .about-icons {
+        box-shadow: 0 1vw 1vw rgba(0, 0, 0, .25);
+        margin-top: 2vw;
+        position: relative;
+        top: -2.5vw;
+        z-index: 2;
+    }
+
+    .about-icons img {
+        margin: 1.5vw 3vw;
+        width: 5vw;
+        z-index: 2;
+    }
+
+    /*resume page =================================================================*/
+
+    .resume-icon {
+        left: 29.5vw;
+        top: 4.25vw;
+        width: 4vw;
+        z-index: 2;
+    }
+
+    .resume-circle {
+        left: 55vw;
+        top: 20.5vw;
+        width: 8vw;
+        z-index: -1;
+    }
+
+    .resume-header {
+        font-size: 5vw;
+    }
+
+    .resume-dates {
+        font-size: 2vw;
+    }
+
+    section {
+        margin: 0 5vw 0 8vw;
+    }
+
+    section.blank-space {
+        margin-top: 8vw;
+    }
 }
