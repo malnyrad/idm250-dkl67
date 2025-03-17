@@ -98,6 +98,7 @@ p {
 
 .page-header {
     font-size: 14vw;
+    margin-top: 25vw;
 }
 
 .tag-line {
@@ -145,32 +146,6 @@ main > ul, main li {
 /*alignments ==========================*/
 .center-align {
     text-align: center;
-}
-
-.center-title {
-    margin: auto;
-    text-align: center;
-}
-
-/*spacing =============================*/
-.blank-space {
-    padding-top: var(--rhythm-4);
-}
-
-.half-space {
-    padding-top: var(--rhythm-2);
-}
-
-.quarter-space {
-    padding-top: var(--rhythm-1);
-}
-
-.anti-space {
-    margin-top: -2.5vw;
-}
-
-.no-margin {
-    margin: 0;
 }
 
 /*images ==============================*/
@@ -494,6 +469,7 @@ main > img.project-horizontal {
 
     .page-header {
         font-size: 12vw;
+        margin-top: 20vw;
     }
 
     .tag-line {
@@ -708,6 +684,7 @@ main > img.project-horizontal {
 
     .page-header {
         font-size: 9vw;
+        margin-top: 4.5vw;
     }
 
     .tag-line {

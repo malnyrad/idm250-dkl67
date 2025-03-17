@@ -1,4 +1,4 @@
-    <?php get_header(); ?>
+<?php get_header(); ?>
     <main>
         <h2 class="page-header center-align"><?php echo strtolower(get_the_title()); ?></h2>
         <?php if (has_post_thumbnail()) : ?>

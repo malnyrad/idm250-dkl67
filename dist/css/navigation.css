@@ -27,7 +27,7 @@
     cursor: pointer;
     position: fixed;
     right: var(--rhythm-1);
-    margin-top: 1rem;
+    margin-top: 0.25rem;
     top: var(--rhythm-1);
     width: var(--rhythm-2);
     z-index: 3;
