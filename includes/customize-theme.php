@@ -2,6 +2,11 @@
     function theme_setup() {
         add_theme_support('post-thumbnails');
         add_post_type_support('page', 'excerpt');
+
+        register_nav_menus([
+            'primary-menu' => 'Primary Menu',
+            'footer-menu' => 'Footer Menu'
+        ]);
     }
     add_action('after_setup_theme', 'theme_setup');
 

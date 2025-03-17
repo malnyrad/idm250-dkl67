@@ -188,14 +188,14 @@ img {
 
 .bg-deco {
     background-attachment: fixed;
-    background-image: url("dist/images/bg_sphere2.png");
+    background-image: url("../dist/images/bg_sphere_1.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .bg-deco-2 {
     background-attachment: fixed;
-    background-image: url("dist/images/bg_sphere.png");
+    background-image: url("/dist/images/bg_sphere_2.png");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
