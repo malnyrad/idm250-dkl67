@@ -1,7 +1,4 @@
 <?php
-    add_theme_support('post-thumbnails');
-    add_post_type_support('page', 'excerpt');
-
     function theme_scripts_and_styles() {
         wp_enqueue_style(
             'idm-normalize',
