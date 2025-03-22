@@ -37,6 +37,7 @@ h1 {
     font-weight: 400;
     letter-spacing: .025rem;
     line-height: 150%;
+    overflow-wrap: break-word;
 }
 
 h2 {
@@ -102,6 +103,15 @@ p {
     text-transform: lowercase;
 }
 
+h1.center-title {
+    color: var(--nutmeg-inv);
+    line-height: 150%;
+    margin: auto;
+    margin-top: 12.5rem;
+    text-align: center;
+    text-transform: lowercase;
+}
+
 .tag-line {
     font-family: var(--ot-round-mono);
     font-size: 4vw;
@@ -126,22 +136,6 @@ main > ul, main li {
     line-height: 160%;
     margin-right: 5vw;
     margin-top: -0.5vw;
-}
-
-.lower-case {
-    text-transform: lowercase;
-}
-
-.bold {
-    font-weight: 700;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.break-wrap {
-    overflow-wrap: break-word;
 }
 
 hr {
@@ -252,10 +246,13 @@ img {
 
 /*home page ===================================================================
     - overlapping reference: https://jsfiddle.net/25UTA/1/*/
-.title-top {
+.title-top h3 {
+    color: var(--genie-inv);
+    font-style: italic;
     letter-spacing: 0.3rem;
     position: absolute;
     right: var(--rhythm-3);
+    text-transform: lowercase;
     top: 58vw;
 }
 
@@ -501,9 +498,8 @@ article > img.horizontal-image {
     }
 
     /*home page ===================================================================*/
-
-    .title-top {
-        top: 50vw;
+    .title-top h3 {
+        top: 5rem;
     }
 
     article {
@@ -667,6 +663,11 @@ article > img.horizontal-image {
         margin-top: 4.5vw;
         text-transform: lowercase;
     }
+
+    h1.center-title {
+        line-height: 125%;
+        margin-top: 2.5rem;
+      }
 
     .tag-line {
         font-size: 2vw;

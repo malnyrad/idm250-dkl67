@@ -19,7 +19,7 @@
                 <?php the_custom_logo(); ?>
             </div>
         <?php else : ?>
-            <h6><a class="logo" href="<?php echo esc_url(home_url('/')); ?>" id="top">&lambda;</a></h6>
+            <h6><a class="logo" href="<?php echo esc_url(home_url("/")); ?>" id="top">&lambda;</a></h6>
         <?php endif; ?>
         <nav>
             <input id="toggle" type="checkbox">
