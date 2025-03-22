@@ -157,18 +157,10 @@ img {
     height: auto;
 }
 
-.vertical-photoset {
-    display: flex;
-    justify-content: space-around;
-}
-
-.vertical-photoset img {
-    width: 43vw;
-}
-
 .bg-deco {
     background-attachment: fixed;
     background-image: url("../images/bg_sphere_1.png");
+    background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -201,60 +193,6 @@ img {
     top: -6vw;
 }
 
-.prev-button {
-    margin-left: var(--rhythm-3);
-}
-
-.prev-button img {
-    position: relative;
-    width: var(--rhythm-3);
-}
-
-.prev-button a.button-link {
-    left: -11.25vw;
-    position: relative;
-    top: -6vw;
-}
-
-.next-button {
-    margin-left: -15vw;
-}
-
-.next-button img {
-    left: 64.5vw;
-    position: relative;
-    width: var(--rhythm-3);
-}
-
-.next-button a.button-link {
-    left: 43.5vw;
-    position: relative;
-    top: -6vw;
-}
-
-.back-button img, .back-to-top img {
-    left: 32vw;
-    position: relative;
-    width: var(--rhythm-4);
-}
-
-.back-button a.button-link {
-    color: var(--background-dark);
-    font-size: 4.5vw;
-    left: 13.5vw;
-    position: relative;
-    top: -8.5vw;
-}
-
-.back-to-top a.button-link {
-    color: var(--background-dark);
-    font-size: 4.5vw;
-    left: 15.5vw;
-    position: relative;
-    top: -8.5vw;
-}
-
-
 /*home page ===================================================================
     - overlapping reference: https://jsfiddle.net/25UTA/1/*/
 .title-top h3 {
@@ -284,15 +222,6 @@ article > img {
     z-index: 1;
 }
 
-article > img.horizontal-image {
-    border-radius: 0.5vw;
-    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
-    position: relative;
-    top: var(--rhythm-4);
-    width: 50vw;
-    z-index: 1;
-}
-
 .project-box {
     align-items: center;
     background-color: #151710;
@@ -319,7 +248,6 @@ article > img.horizontal-image {
     font-size: 3.5vw;
 }
 
-
 /*projects pages ==============================================================*/
 .project-thumbnail img {
     margin-top: 20vw;
@@ -336,95 +264,16 @@ article > img.horizontal-image {
     text-transform: lowercase;
 }
 
-/*personal page ===============================================================*/
-.scrollable {
-    border-radius: 0.5vw;
-    max-width: 80vw;
-    overflow-x: clip;
-    overflow-y: auto;
-    position: relative;
-}
-
-.photo-section {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.photo-section img {
-    border-radius: 0.5vw;
-    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .5);
-    margin: 1.5vw;
-    width: 80vw;
-}
-
-.scrollable > .vertical-photoset img {
-    width: 38.5vw;
-}
-
-
-/*about me page ===============================================================*/
-.about-me img {
-    border-radius: 0.5vw;
-    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
-    position: relative;
-    top: var(--rhythm-4);
-    width: 60vw;
-}
-
-.about-me img.horizontal-image {
-    border-radius: 0.5vw;
-    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
-    position: relative;
-    top: var(--rhythm-1);
-    width: 80vw;
-}
-
-.about-icons {
-    align-items: center;
-    background-color: #151710;
-    border-radius: 1vw;
-    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .5);
-    display: flex;
-    justify-content: center;
-    margin-top: -15vw;
-}
-
-.about-icons img {
-    margin: 6vw;
-    width: 15vw;
-}
-
-
-/*resume page =================================================================*/
-
-.resume-icon {
-    left: 37vw;
-    position: relative;
-    top: 6.5vw;
-    width: 8vw;
-}
-
-.resume-circle {
-    left: 43.5vw;
-    position: absolute;
-    top: 55vw;
-    width: 15vw;
-    z-index: -1;
-}
-
 /*=================================================================================================*/
 /*=================================================================================================*/
 
 @media (min-width: 744px) {
-    /*general formatting ==========================================================*/
-    
+    /*general formatting ======================================================*/
     main {
         margin: 0 var(--rhythm-3);
     }
 
-    /*text ================================*/
+    /*text ====================================================================*/
     h1 {
         font-size: 32vw; 
     }
@@ -468,12 +317,7 @@ article > img.horizontal-image {
         font-size: 2.5vw;
     }
 
-    /*spacing =============================*/
-    .blank-space {
-        padding-top: var(--rhythm-3);
-    }
-
-    /*images ==============================*/
+    /*images ==================================================================*/
     .bg-deco-2 {
         background-attachment: fixed;
         background-image: linear-gradient(to right, rgba(15, 19, 9, 0), rgba(15, 19, 9, .8));
@@ -481,34 +325,8 @@ article > img.horizontal-image {
         background-repeat: no-repeat;
         background-size: contain;
     }
- 
-    /*buttons =============================*/
-    .prev-button a.button-subheader {
-        left: 5vw;
-    }
-    
-    .next-button a.button-subheader {
-        left: 39.5vw;
-    }
-    
-    .back-button img, .back-to-top img {
-        left: 30vw;
-        width: var(--rhythm-3);
-    }
-    
-    .back-button a.button-link {
-        font-size: 3.5vw;
-        left: 16vw;
-        top: -6.5vw;
-    }
-    
-    .back-to-top a.button-link {
-        font-size: 4vw;
-        left: 16.5vw;
-        top: -6.5vw;
-    }
 
-    /*home page ===================================================================*/
+    /*home page ===============================================================*/
     .title-top h3 {
         top: 5rem;
     }
@@ -539,8 +357,7 @@ article > img.horizontal-image {
         font-size: 3vw;
     }
 
-    /*projects pages ==============================================================*/
-
+    /*projects pages ==========================================================*/
     .project-header {
         font-size: 10.5vw;
     }
@@ -549,92 +366,16 @@ article > img.horizontal-image {
         width: 30vw;
     }
 
-    main > img.project-vertical {
-        width: 40vw;
-    }
-
-    main > img.project-horizontal {
-        width: 60vw;
-    }
-
-    .vertical-photoset > .triple-column {
-        width: 22.5vw;
-    }
-
-    /*personal page ===============================================================*/
-
-    .personal-subheader {
-        font-size: 4.5vw;
-    }
-    
-    .personal-subheader-r {
-        font-size: 4.5vw;
-        left: 57.5vw;
-    }
-
-    .scrollable {
-        max-width: 75vw;
-    }
-
-    .photo-section img {
-        width: 75vw;
-    }
-
-    .scrollable > .vertical-photoset img {
-        width: 33.5vw;
-    }
-
-    /*about me page ===============================================================*/
-
-    .about-me img {
-        top: var(--rhythm-3);
-        width: 40vw;
-    }
-
-    .about-me img.horizontal-image {
-        width: 60vw;
-    }
-
-    .about-icons {
-        margin-top: -10vw;
-        max-width: 80vw;
-    }
-
-    .about-icons img {
-        margin: 4vw;
-        width: 10vw;
-    }
-
-    /*resume page =================================================================*/
-
-    .resume-icon {
-        left: 33.8vw;
-        top: 7vw;
-        width: 6vw;
-    }
-
-    .resume-circle {
-        left: 45.5vw;
-        top: 47.5vw;
-        width: 12.5vw;
-    }
-
-    .resume-dates {
-        font-size: 3.25vw;
-    }
-}
-
 /*=================================================================================================*/
 /*=================================================================================================*/
 
 @media (min-width: 1280px) {
-    /*general formatting ==========================================================*/
-    
+    /*general formatting ======================================================*/
     main {
         margin: 0 10vw 0 27.5vw;
     }
 
-    main.bg-deco-home {
+    main.bg-deco, main.bg-deco-home {
         margin-right: 0;
     }
 
@@ -642,7 +383,7 @@ article > img.horizontal-image {
         height: var(--rhythm-1);
     }
 
-    /*text ================================*/
+    /*text ====================================================================*/
     h1 {
         font-size: 22.5vw; 
         line-height: 75%;
@@ -696,16 +437,7 @@ article > img.horizontal-image {
         font-size: 1.25vw; 
     }
 
-    /*spacing =============================*/
-    .blank-space {
-        padding-top: 2vw;
-    }
-
-    .quarter-space {
-        padding-top: 2vw;
-    }
-
-    /*images ==============================*/
+    /*images ==================================================================*/
     .bg-deco-2 {
         background-attachment: fixed;
         background-image: none;
@@ -734,56 +466,7 @@ article > img.horizontal-image {
         z-index: 2;
     }
 
-    .prev-button a.button-link {
-        font-size: 2.5vw;
-        left: 27.5vw;
-        z-index: 2;
-    }
-
-    .prev-button a.button-subheader {
-        font-size: 2vw;
-        left: 2.5vw;
-        top: 2.5vw;
-        width: 25vw;
-        z-index: 2;
-    }
-
-    .next-button a.button-link {
-        font-size: 2.5vw;
-        left: 65vw;
-        z-index: 2;
-    }
-
-    .next-button a.button-subheader {
-        font-size: 2vw;
-        left: 34.5vw;
-        top: 2.5vw;
-        z-index: 2;
-    }
-
-    .back-button img, .back-to-top img {
-        left: 26.5vw;
-        top: -5vw;
-        width: var(--rhythm-2);
-        z-index: 2;
-    }
-
-    .back-button a.button-link {
-        font-size: 2.5vw;
-        left: 17vw;
-        top: -9.25vw;
-        z-index: 2;
-    }
-
-    .back-to-top a.button-link {
-        font-size: 2.5vw;
-        left: 18vw;
-        top: -9.25vw;
-        z-index: 2;
-    }
-
-    /*home page ===================================================================*/
-
+    /*home page ===============================================================*/
     .title-top {
         right: 18vw;
         top: 25vw;
@@ -800,13 +483,6 @@ article > img.horizontal-image {
         margin-right: 2vw;
         top: -1.5vw;
         width: 15vw;
-        z-index: 0;
-    }
-
-    article > img.horizontal-image {
-        margin-right: 2vw;
-        top: -1.5vw;
-        width: 25vw;
         z-index: 0;
     }
 
@@ -835,8 +511,83 @@ article > img.horizontal-image {
         font-size: 1.5vw;
     }
 
-    /*projects pages ==============================================================*/
+    /*page template ===========================================================*/
+    .page-image {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: -2.5rem;
+    }
 
+    .page-image img {
+        width: 20vw;
+    }
+
+    .page-image p {
+        font-style: italic;
+        margin-top: 2.5rem;
+        text-transform: lowercase;
+    }
+
+    .main-content h1 {
+        font-size: 20vw;
+        line-height: 80%;
+        margin-bottom: 0;
+        padding-bottom: 2.5rem;
+        text-align: center;
+        text-transform: lowercase;
+    }
+
+    .main-content h2 {
+        text-align: center;
+        text-transform: lowercase;
+    }
+
+    .main-content h3 {
+        font-size: 5vw;
+        letter-spacing: -5%;
+        margin: 3rem 0;
+        text-transform: lowercase;
+    }
+
+    .main-content ul li {
+        line-height: 200%;
+        list-style-type: "✦    ";
+    }
+
+    .main-content h4 {
+        font-size: 3vw;
+        text-transform: lowercase;
+    }
+
+    .main-content h5 {
+        text-transform: lowercase;
+    }
+
+    .main-content figure {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    .main-content img {
+        width: 40vw;
+    }
+
+    .main-content figcaption {
+        font-family: var(--ot-round);
+        font-size: 1.25vw;
+        font-style: italic;
+        margin-top: 2.5rem;
+        text-transform: lowercase;
+    }
+
+    .main-content h6 {
+
+    }
+
+    /*projects pages ==========================================================*/
     .project-header {
         font-size: 6vw;
     }
@@ -849,128 +600,3 @@ article > img.horizontal-image {
     main > img {
         width: 20vw;
     }
-
-    main > img.project-vertical {
-        margin-top: 2vw;
-        width: 20vw;
-    }
-
-    main > img.project-horizontal {
-        width: 40vw;
-    }
-
-    .vertical-photoset > .triple-column {
-        padding-top: 1.5vw;
-        width: 17.5vw;
-    }
-
-    /*personal page ===============================================================*/
-
-    .personal-page-header {
-        font-size: 6vw;
-        margin-top: -3.5vw;
-    }
-
-    .personal-page-subheader {
-        font-size: 4.5vw;
-    }
-
-    .personal-nav {
-        margin-bottom: -1.5vw;
-        padding-top: 0.5vw;
-        position: relative;
-        z-index: 2;
-    }
-
-    .personal-subheader {
-        font-size: 3vw;
-    }
-
-    .personal-subheader-r {
-        font-size: 3vw;
-        left: 54vw;
-    }
-
-    .scrollable {
-        margin-bottom: 2vw;
-        margin-left: 11vw;
-        max-width: 40vw;
-    }
-
-    .photo-section img {
-        margin: 0.5vw;
-        width: 40vw;
-    }
-
-    .scrollable > .vertical-photoset img {
-        width: 19.5vw;
-    }
-
-    /*about me page ===============================================================*/
-
-    .about-me {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    article.about-me {
-        margin: -5vw 5vw;
-    }
-
-    .about-me img {
-        top: 2vw;
-        width: 20vw;
-    }
-
-    .about-me img.horizontal-image {
-        top: 2.5vw;
-        width: 25vw;
-    }
-
-    .about-icons {
-        box-shadow: 0 1vw 1vw rgba(0, 0, 0, .25);
-        margin-top: 2vw;
-        position: relative;
-        top: -2.5vw;
-        z-index: 2;
-    }
-
-    .about-icons img {
-        margin: 1.5vw 3vw;
-        width: 5vw;
-        z-index: 2;
-    }
-
-    /*resume page =================================================================*/
-
-    .resume-icon {
-        left: 29.5vw;
-        top: 4.25vw;
-        width: 4vw;
-        z-index: 2;
-    }
-
-    .resume-circle {
-        left: 55vw;
-        top: 20.5vw;
-        width: 8vw;
-        z-index: -1;
-    }
-
-    .resume-header {
-        font-size: 5vw;
-    }
-
-    .resume-dates {
-        font-size: 2vw;
-    }
-
-    section {
-        margin: 0 5vw 0 8vw;
-    }
-
-    section.blank-space {
-        margin-top: 8vw;
-    }
-}
