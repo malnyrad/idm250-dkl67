@@ -18,10 +18,10 @@ $query = new WP_Query($args);
 
 if ($query->have_posts()) :
     while ($query->have_posts()) : $query->the_post();
-        echo strtolower(get_the_title());
+    get_template_part("components/project-card");
     endwhile;
 
-    //get_template_part('components/pagination.php');
+    get_template_part('components/pagination.php');
 
     wp_reset_postdata();
 else : ?>

@@ -99,6 +99,7 @@ p {
 .page-header {
     font-size: 14vw;
     margin-top: 25vw;
+    text-transform: lowercase;
 }
 
 .tag-line {
@@ -141,6 +142,10 @@ main > ul, main li {
 
 .break-wrap {
     overflow-wrap: break-word;
+}
+
+hr {
+    width: 80%;
 }
 
 /*alignments ==========================*/
@@ -308,47 +313,20 @@ article > img.horizontal-image {
 
 
 /*projects pages ==============================================================*/
-.project-header {
-    font-size: 12vw;
-    margin-bottom: 0;
+.project-thumbnail img {
+    margin-top: 20vw;
 }
 
-main > img {
-    border-radius: 0.5vw;
-    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: var(--rhythm-1);
-    width: 40vw;
+.project-title {
+    font-size: 14vw;
+    margin: 25vw 0 0 0;
+    text-transform: lowercase;
 }
 
-main > img.project-vertical {
-    border-radius: 0.5vw;
-    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: var(--rhythm-1);
-    width: 50vw;
+.project-meta {
+    margin: 0 0 1rem 0;
+    text-transform: lowercase;
 }
-
-main > img.project-horizontal {
-    border-radius: 0.5vw;
-    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: var(--rhythm-1);
-    width: 80vw;
-}
-
-.vertical-photoset > .triple-column {
-    border-radius: 0.5vw;
-    box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
-    width: 25.5vw;
-}
-
 
 /*personal page ===============================================================*/
 .scrollable {
@@ -471,6 +449,7 @@ main > img.project-horizontal {
     .page-header {
         font-size: 12vw;
         margin-top: 20vw;
+        text-transform: lowercase;
     }
 
     .tag-line {
@@ -686,6 +665,7 @@ main > img.project-horizontal {
     .page-header {
         font-size: 9vw;
         margin-top: 4.5vw;
+        text-transform: lowercase;
     }
 
     .tag-line {

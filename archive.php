@@ -11,9 +11,8 @@
 <ul class="grid grid-3">
     <?php
   while (have_posts()) : the_post(); ?>
-    <div class="grid-item">
-    <?php echo strtolower(get_the_title()); ?>
-    </div>
+    <?php get_template_part("components/project-card"); ?>
+
 
     <?php endwhile; ?>
   </ul>
