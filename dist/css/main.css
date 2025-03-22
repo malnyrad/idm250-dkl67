@@ -15,6 +15,10 @@ main {
     margin: 0 var(--rhythm-2);
 }
 
+.wrapper {
+    margin-right: 10vw;
+}
+
 a.text-link {
     color: var(--genie-inv);
     text-decoration: underline;
@@ -165,6 +169,13 @@ img {
 .bg-deco {
     background-attachment: fixed;
     background-image: url("../images/bg_sphere_1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-deco-home {
+    background-attachment: fixed;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -623,6 +634,10 @@ article > img.horizontal-image {
         margin: 0 10vw 0 27.5vw;
     }
 
+    main.bg-deco-home {
+        margin-right: 0;
+    }
+
     footer {
         height: var(--rhythm-1);
     }
@@ -700,6 +715,11 @@ article > img.horizontal-image {
     }
 
     /*buttons =============================*/
+    .see-more-button {
+        margin-top: -1.5rem;
+        padding-bottom: 5rem;
+    }
+
     .see-more-button img {
         left: 11.75vw;
         top: 1vw;
@@ -772,7 +792,7 @@ article > img.horizontal-image {
     article {
         flex-direction: row;
         justify-content: space-between;
-        padding-bottom: 7.5vw;
+        padding-bottom: 2.5rem;
         top: -1.5vw;
     }
 
@@ -787,6 +807,13 @@ article > img.horizontal-image {
         margin-right: 2vw;
         top: -1.5vw;
         width: 25vw;
+        z-index: 0;
+    }
+
+    .featured-image {
+        margin-right: 2vw;
+        top: -1.5vw;
+        width: 15vw;
         z-index: 0;
     }
 

@@ -1,10 +1,5 @@
 <?php get_header(); ?>
-<main>
-    <?php get_template_part('components/home-title'); ?>
-    <?php if (has_post_thumbnail()) : ?>
-    <div class="featured-image">
-        <?php the_post_thumbnail(); ?>
-    </div>
-    <?php endif; ?>
+<?php get_template_part("components/home-title"); ?>
+<?php get_template_part("components/latest-projects"); ?>
 </main>
-<?php get_template_part("components/content"); ?><?php get_footer(); ?>
+<?php get_footer(); ?>
