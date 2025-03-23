@@ -495,6 +495,7 @@ article > img {
     }
 
     .project-box {
+        max-width: 60%;
         padding-left: 2.5vw;
         padding-right: 2.5vw;
         padding-top: var(--rhythm-1);
