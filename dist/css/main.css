@@ -824,4 +824,11 @@ article > img {
     main > img {
         width: 20vw;
     }
+
+    /*404 page ================================================================*/
+    .error-404 h3 {
+        margin: 0;
+        margin-top: 20rem;
+        text-transform: lowercase;
+    }
 }
