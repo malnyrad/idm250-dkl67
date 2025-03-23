@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main class="bg-deco">
   <div class="wrapper">
-    <h2 class="page-header center-align">Projects</h2>
+    <h2 class="page-header center-align"><?php the_archive_title(); ?></h2>
     <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
         $args = [
