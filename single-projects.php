@@ -2,6 +2,7 @@
 <main class="bg-deco">
     <div class="wrapper">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <div class="project">
                 <h2 class="project-header"><?php the_title(); ?></h2>
                 <p class="tag-line"><?php echo get_the_excerpt(); ?></p>
                 <p class="project-categories">
@@ -25,6 +26,7 @@
                 <div class="project-tags">
                     <?php the_tags("Tags: ", ", "); ?>
                 </div>
+            </div>
         <?php endwhile; endif; ?>
     </div>
 </main>

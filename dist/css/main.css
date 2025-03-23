@@ -142,12 +142,26 @@ main > ul, main li {
 }
 
 hr {
-    width: 80%;
+    margin: 1.5rem auto;
+    width: 40%;
 }
 
 /*alignments ==========================*/
 .center-align {
     text-align: center;
+}
+
+/*buttons =============================*/
+.see-more-button img {
+    left: 21.35vw;
+    position: relative;
+    width: var(--rhythm-3);
+}
+
+.see-more-button a.button-link {
+    left: -7vw;
+    position: relative;
+    top: -6vw;
 }
 
 /*images ==============================*/
@@ -177,19 +191,6 @@ img {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-/*buttons =============================*/
-.see-more-button img {
-    left: 21.75vw;
-    position: relative;
-    width: var(--rhythm-3);
-}
-
-.see-more-button a.button-link {
-    left: -7vw;
-    position: relative;
-    top: -6vw;
 }
 
 /*home page ===================================================================
@@ -245,22 +246,6 @@ article > img {
 
 .project-blurb {
     font-size: 3.5vw;
-}
-
-/*projects pages ==============================================================*/
-.project-thumbnail img {
-    margin-top: 20vw;
-}
-
-.project-title {
-    font-size: 14vw;
-    margin: 25vw 0 0 0;
-    text-transform: lowercase;
-}
-
-.project-meta {
-    margin: 0 0 1rem 0;
-    text-transform: lowercase;
 }
 
 /*=================================================================================================*/
@@ -442,19 +427,10 @@ article > img {
         font-size: 1.25vw; 
     }
 
-    /*images ==================================================================*/
-    .bg-deco-2 {
-        background-attachment: fixed;
-        background-image: none;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    /*buttons =============================*/
+    
+    /*buttons =================================================================*/
     .see-more-button {
-        margin-top: -1.5rem;
-        padding-bottom: 5rem;
+        margin-bottom: 5rem;
     }
 
     .see-more-button img {
@@ -469,6 +445,15 @@ article > img {
         left: -3vw;
         top: -2vw;
         z-index: 2;
+    }
+
+    /*images ==================================================================*/
+    .bg-deco-2 {
+        background-attachment: fixed;
+        background-image: none;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
     /*home page ===============================================================*/
@@ -502,7 +487,7 @@ article > img {
         max-width: 60%;
         padding-left: 2.5vw;
         padding-right: 2.5vw;
-        padding-top: var(--rhythm-1);
+        padding-top: 0;
     }
 
     .project-box h2 {
@@ -636,13 +621,15 @@ article > img {
         border-radius: 100%;
         display: flex;
         height: 8.5rem;
+        justify-content: center;
         width: 8.5rem;
     }
 
     .main-content .wp-block-button__link {
         background: none;
         color: var(--background-dark);
-        font-family: var(--ot-round);
+        font-family: var(--aremsmile);
+        font-size: 1.5vw;
     }
 
     /*alternate page template ===========================================================*/
@@ -813,7 +800,8 @@ article > img {
     .alt-main-content .wp-block-button__link {
         background: none;
         color: var(--background-dark);
-        font-family: var(--ot-round);
+        font-family: var(--aremsmile);
+        font-size: 1.5vw;
     }
 
     /*projects pages ==========================================================*/
@@ -824,13 +812,72 @@ article > img {
         text-align: center;
     }
 
-    main > p {
-        position: relative;
-        z-index: 5;
+    .project-categories {
+        text-align: center;
+        text-transform: lowercase;
     }
 
-    main > img {
-        width: 20vw;
+    .project-thumbnail img {
+        border-radius: 1.5%;
+        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+        display: block;
+        margin: 2rem auto;
+        width: 20%;
+    }
+
+    .project-link {
+        font-style: italic;
+        text-align: center;
+        text-transform: lowercase;
+    }
+
+    .project-content h2 {
+        margin-bottom: 2rem;
+        text-transform: lowercase;
+    }
+
+    .horizontal-image img {
+        border-radius: 1.5%;
+        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+        display: block;
+        margin: 2rem auto;
+        margin-bottom: 1rem;
+        width: 60%;
+    }
+
+    .horizontal-image figcaption {
+        font-family: var(--ot-round);
+        font-size: 1.25vw;
+        font-style: italic;
+        text-align: center;
+        text-transform: lowercase;
+    }
+
+    .project-content .wp-block-buttons {
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+
+    .project-content .wp-block-button {
+        align-items: center;
+        background-color: var(--nutmeg-inv);
+        border-radius: 100%;
+        display: flex;
+        height: 8.5rem;
+        justify-content: center;
+        width: 8.5rem;
+    }
+
+    .project-content .wp-block-button__link {
+        background: none;
+        color: var(--background-dark);
+        font-family: var(--aremsmile);
+        font-size: 1.5vw;
+    }
+
+    .project {
+        padding-bottom: 5rem;
     }
 
     /*404 page ================================================================*/
