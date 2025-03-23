@@ -127,8 +127,10 @@
         background: none;
         box-shadow: -0.5vw 0 1.5vw rgba(0, 0, 0, 0);
         display: flex;
+        margin-left: -8.3rem;
         margin-top: var(--rhythm-1);
-        right: 0;
+        right: auto;
+        width: 20%;
     }
 
     .menu-item {
