@@ -111,7 +111,6 @@ h1.center-title {
     color: var(--nutmeg-inv);
     line-height: 150%;
     margin: auto;
-    margin-top: 12.5rem;
     text-align: center;
     text-transform: lowercase;
 }
@@ -417,17 +416,22 @@ article > img {
 
     .page-header {
         font-size: 9vw;
-        margin-top: 4.5vw;
+        margin-top: 0;
+        padding-top: 4.5vw;
         text-transform: lowercase;
     }
 
     h1.center-title {
         line-height: 125%;
-        margin-top: 2.5rem;
+        padding-top: 2.5rem;
       }
 
     .tag-line {
+        color: var(--nutmeg-inv);
         font-size: 2vw;
+        margin: 0 10rem;
+        text-align: center;
+        text-transform: lowercase;
     }
 
     .button-link {
@@ -646,7 +650,7 @@ article > img {
         align-items: center;
         display: flex;
         justify-content: center;
-        margin-top: 10rem;
+        padding-top: 10rem;
     }
 
     .alt-page-header {
@@ -815,6 +819,9 @@ article > img {
     /*projects pages ==========================================================*/
     .project-header {
         font-size: 6vw;
+        margin: 0;
+        padding-top: 5rem;
+        text-align: center;
     }
 
     main > p {
